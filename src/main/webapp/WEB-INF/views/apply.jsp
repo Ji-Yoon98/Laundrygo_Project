@@ -39,7 +39,7 @@
                                     <h4>수거/배송 주소</h4>
                                     <div class="form-row">
                                         <div class="form-group col-md-10">
-                                            <input type="text" class="form-control" name="address" value="${user.addr}" placeholder="주소 받아오는 곳">
+                                            <input type="text" class="form-control" name="address" value="${user.addr}" placeholder="주소 받아오는 곳" readonly=readonly>
                                         </div>
                                         <div class="form-group col-md-2">
                                             <input type="button" class="form-control" name="button" value="수정" placeholder="수정 바로가기" onclick="applyModAddr()">
@@ -48,10 +48,10 @@
                                     <h4>결제 정보</h4>
                                     <div class="form-row">
                                         <div class="form-group col-md-10">
-                                            <input type="text" class="form-control" name="card_type" id="card_type" value="${credit.card_type eq null ? temp.card_type : credit.card_type}" placeholder="카드사 받아오는 곳">
+                                            <input type="text" class="form-control" name="card_type" id="card_type" value="${credit.card_type eq null ? temp.card_type : credit.card_type}" placeholder="카드사 받아오는 곳" readonly=readonly>
                                         </div>
                                         <div class="form-group col-md-10">
-                                            <input type="text" class="form-control" name="card_num" id="card_num" value="${credit.card_num eq null? temp.card_num : credit.card_num}" placeholder="카드번호 받아오는 곳">
+                                            <input type="text" class="form-control" name="card_num" id="card_num" value="${credit.card_num eq null? temp.card_num : credit.card_num}" placeholder="카드번호 받아오는 곳" readonly=readonly>
                                         </div>
                                         <div class="form-group col-md-2">
                                             <input type="button" class="form-control" name="button" value="카드 변경" placeholder="변경 바로가기" onclick="applyModAccount()">
