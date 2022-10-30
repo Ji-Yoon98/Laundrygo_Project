@@ -173,7 +173,7 @@ function modAddAccount() {
 }
 
 function validateModify() {
-
+    new_pw = $("#pwd_mod").val();
     if( new_pw == "" &&
         user_phone == phone_mod.value &&
         user_addr == addr_mod.value &&
